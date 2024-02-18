@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .p{
+        width: 30rem;
+        height: auto;
+        
+        margin: 10rem auto;
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+<body id="colr">
+    <div class="p" >
+        <h1>DISCO</h1>
+    </div>
+
+    <script>
+        var c=document.getElementById("colr")
+        c.style.backgroundColor='yellow'
+        function change(){
+           if(c.style.backgroundColor=='yellow'){
+            c.style.backgroundColor='white'
+           }
+           else if(c.style.backgroundColor=='white'){
+            c.style.backgroundColor='red'
+           }
+           else{
+            c.style.backgroundColor='yellow'
+           }
+        }
+        setInterval(change,100)
+    </script>
+</body>
+
+</html>
